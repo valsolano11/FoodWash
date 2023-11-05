@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background-color: #29e762;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.container-form{
+    width: 87%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+.bienvenida{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.mensaje{
+    padding: 2rem;
+}
+.mensaje h2{
+    color: #000000;
+    margin-top: 21%;
+    font-size: 2.9rem;
+    padding: 3rem 0;
+}
+.mensaje p{
+    color: #000000;
+    font-size: 1.4rem;
+}
+.mensaje button{
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #000000;
+}
+.mensaje button a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.mensaje button:hover{
+    background-color: #e7d429;
+}
+.formulario{
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: #050505;
+    text-align: center;
+}
+.create-account{
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+.iconos{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.border-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin rgb(255, 251, 251);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+.border-icon:hover{
+    background-color: #e7d429;
+}
+.cuenta{
+    padding: 2rem 0;
+}
+.formulario input{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: beige;
+}
+.formulario input[type="submit"]{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: #e7d429;
+    font-weight: 400;
+    margin-top: 3rem;
+    font-size: .8rem;
+    color: #000000;
+}
+.div .success{
+    color: #9c0000;
+}
+.alerta{
+    color: #ffffff;
+}
+.btn-1{
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background-color: aqua;
+    font-size: 16px;
+    color:#000000;
+    margin-top: 20pxpx;
+    box-shadow: 0 0 20px rgba(0,0, 0, 2);
+}
+.btn-1:hover{
+  background-color: orange;
+}
