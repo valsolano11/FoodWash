@@ -9,24 +9,24 @@
     <body>
         <header class="header">
 
-            <img src="./Img/Fondo.avif" alt>
-
             <div class="menu container">
-                <a href class="logo">FoodWash</a>
+                <a href="#" class="logo">FoodWash</a>
                 <input type="checkbox" id="menu">
                 <label for="menu">
-                    <img src="" class="menu.icono" alt>
+                    <img src class="menu.icono" alt>
                 </label>
                 <nav class="navbar">
                     <ul>
-                        <li><a href>Inicio</a></li>
-                        <li><a href>Servicios</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="/registro.html">Registro</a></li>
+                        <li><a href="/InicioSesion.html">Inicio Sesion</a></li>
                     </ul>
                 </nav>
                 <div>
                     <ul>
                         <li class="submenu">
-                            <img src class="img-carrito" alt="carrito">
+                            <img src="./Img/cart-add-regular-24.png"
+                                class="img-carrito" alt="carrito">
                             <div class="carrito">
                                 <table id="lista-carrito">
                                     <thead>
@@ -37,9 +37,9 @@
                                             <th></th>
                                         </tr>
                                     </thead>
-                                    <tbody></tbody>
+                                    <tbody id="carrito"></tbody>
                                 </table>
-                                <a href id="vaciar-carrito" class="btn-3">Vaciar
+                                <a href="#" id="vaciar-carrito" class="btn-3">Vaciar
                                     Carrito</a>
                             </div>
                         </li>
@@ -51,199 +51,102 @@
                 <div class="header-txt">
                     <h1> <span>Bienvenido</span> Disfruta de nuestros platillos</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sunt harum totam tempora perspiciatis laborum
-                        blanditiis! Eligendi, minima error molestias, veniam
-                        sint natus, nobis perspiciatis tempora consequatur
-                        adipisci illo amet modi!
+                        Nuestra restaurante cuenta con los mejores desayunos 
+                        y almuerzos que podras encontrar en Medellin, tambien
+                        podras recibir informacion y pedir tu comida aqui en
+                        nuestra página web.
                     </p>
-                    <a href class="btn-1">Informacion</a>
+                    <a href="#" class="btn-1">Informacion</a>
                 </div>
 
                 <div class="header-img">
-                    <img src alt>
+                    <img src="./Img/12.jpg" alt>
                 </div>
             </div>
         </header>
 
-        <section class="breakfast container">
+        <section class="breakfast-container">
             <h2>Desayunos</h2>
-            <p>Horario 9am-9pm</p>
+
+            <p>Horario de atencion de nuestros desayunos
+                es de 5:30am a 11:30am</p>
+
             <div class="breakfast-content">
-                <div class="breakfast1">
-                    <img src alt>
-                    <h3>Platillo 1</h3>
+
+            </div>
+        </section>
+
+        <section class="info">
+
+            <img class="bg-2" src alt>
+            <div class="info-content container">
+
+                <div class="info-img">
+                    <img src="./Img/segund1.jpg" alt>
                 </div>
-                <div class="breakfast-content">
-                    <div class="breakfast">
-                        <img src alt>
-                        <h3>Platillo 3</h3>
+                <div class="info-txt">
+                    <h2>La mejor calidad en los productos</h2>
+                    <p>
+                       Nuestros productos son 100% naturales y artesanales, podras 
+                       elegir como deseas tus alimentos, ya que tenemos el honor 
+                       de atenderte de la mejor manera.
+                    </p>
+                    <a href="#" class="btn-1">Informacion</a>
+                </div>
+            </div>
+        </section>
+
+        <main class="products container">
+            <h2>Almuerzo</h2>
+            <p>Horario de atencion de nuestros almuerzos
+                es de 12:30pm a 5:30pm</p>
+
+            <div class="box-container" id="lista-1">
+
+                <div class="box">
+                    <img src="./Img/product1.jpg" alt>
+                    <div class="product-txt">
+                        <h3>Carnitas</h3>
+                        <p>calidad premiun</p>
+                        <p class="precio">$20.000</p>
+
+                        <a href class="agregar-carrito btn-3" data-id="1">Agregar
+                            al carrito</a>
                     </div>
-                    <div class="breakfast-content">
-                        <div class="breakfast1">
-                            <img src alt>
-                            <h3>Platillo 3</h3>
-                        </div>
-                        <div class="breakfast-content">
-                            <div class="breakfast1">
-                                <img src alt>
-                                <h3>Platillo 4</h3>
-                            </div>
-                        </div>
-                    </section>
+                </div>
+                <div class="box">
+                    <img src="/Img/product2.jpg" alt>
+                    <div class="product-txt">
+                        <h3>Hj</h3>
+                        <p>calidad premiun</p>
+                        <p class="precio">$20.000</p>
+                        <a href="#" class="agregar-carrito btn-3"
+                            data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/Img/product3.jpg" alt>
+                    <div class="product-txt">
+                        <h3>Hj</h3>
+                        <p>calidad premiun</p>
+                        <p class="precio">$20.000</p>
+                        <a href="#" class="agregar-carrito btn-3"
+                            data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/Img/product4.jpg" alt>
+                    <div class="product-txt">
+                        <h3>Hj</h3>
+                        <p>calidad premiun</p>
+                        <p class="precio">$20.000</p>
+                        <a href="#" class="agregar-carrito btn-3"
+                            data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-                    <section class="info">
-
-                        <img class="bg-2" src alt>
-                        <div class="info-content container">
-
-                            <div class="info-img">
-                                <img src alt>
-                            </div>
-                            <div class="info-txt">
-                                <h2>La mejor calidad en los productos</h2>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consectetur, expedita,
-                                    laboriosam modi veritatis soluta, autem
-                                    praesentium voluptatum sit aperiam repellat
-                                    itaque quis commodi dicta hic a facere quae
-                                    ipsam earum.
-                                </p>
-                                <a href class="btn-1">Informacion</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <main class="products container">
-                        <h2>Productos</h2>
-
-                        <div class="box container" id="lista-1">
-                            <div class="box">
-                                <img src alt>
-                                <div class="product-txt">
-                                    <h3>Hj</h3>
-                                    <p>calidad premiun</p>
-                                    <p class="precio">$20.000</p>
-                                    <a href class="agregar-carrito btn-3"
-                                        data-id="1">Agregar al carrito</a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <img src alt>
-                                <div class="product-txt">
-                                    <h3>Hj</h3>
-                                    <p>calidad premiun</p>
-                                    <p class="precio">$20.000</p>
-                                    <a href class="agregar-carrito btn-3"
-                                        data-id="2">Agregar al carrito</a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <img src alt>
-                                <div class="product-txt">
-                                    <h3>Hj</h3>
-                                    <p>calidad premiun</p>
-                                    <p class="precio">$20.000</p>
-                                    <a href class="agregar-carrito btn-3"
-                                        data-id="3">Agregar al carrito</a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <img src alt>
-                                <div class="product-txt">
-                                    <h3>Hj</h3>
-                                    <p>calidad premiun</p>
-                                    <p class="precio">$20.000</p>
-                                    <a href class="agregar-carrito btn-3"
-                                        data-id="4">Agregar al carrito</a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <img src alt>
-                                <div class="product-txt">
-                                    <h3>Hj</h3>
-                                    <p>calidad premiun</p>
-                                    <p class="precio">$20.000</p>
-                                    <a href class="agregar-carrito btn-3"
-                                        data-id="5">Agregar al carrito</a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <img src alt>
-                                <div class="product-txt">
-                                    <h3>Hj</h3>
-                                    <p>calidad premiun</p>
-                                    <p class="precio">$20.000</p>
-                                    <a href class="agregar-carrito btn-3"
-                                        data-id="6">Agregar al carrito</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="btn-2" id="load-more">Cargar más</div>
-                    </main>
-
-                    <section class="app container">
-                        <div class="app-txt">
-                            <h2>Descarga Nuestra app</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Voluptatem voluptatum ea
-                                minima fugit error! Necessitatibus nesciunt
-                                repellat similique accusantium. Esse explicabo
-                                quod beatae magnam doloremque laudantium
-                                exercitationem repudiandae ratione sunt.</p>
-                                <div class="descarga">
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                </div>
-                        </div>
-
-                        <div class="app-img">
-                            <img src="" alt="">
-                        </div>
-                    </section>
-
-                    <footer class="footer">
-                        <div class="footer-content container">
-                            <div class="link">
-                                <h3>lorem</h3>
-                                <ul>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                </ul>
-                            </div>
-                            <div class="link">
-                                <h3>lorem</h3>
-                                <ul>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                </ul>
-                            </div>
-                            <div class="link">
-                                <h3>lorem</h3>
-                                <ul>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                    <li><a href="">lorem</a></li>
-                                </ul>
-                            </div>
-                            <div class="link">
-                                <h3>lorem</h3>
-                                <div class="descarga">
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                </div>
-                                <h1>Frank le dan mero trabajo programando</h1>
-                        </div>
-                    </footer>
-
-                    <script src="/asset/js/java.js"></script>
-                </body>
-            </html>
+        <script src="/asset/js/java.js"></script>
+    </body>
+</html>
