@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 210, 127);
+    background: linear-gradient(to right, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    max-width: 200%;
+    min-height: 300px;
+}
+
+.container span{
+    font-size: 12px;
+}
+.container button{
+    background-color: rgb(44, 102, 102);
+    color: black;
+    font-size: 12px;
+    padding: 10px 60px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.toogle-container button{
+    padding: 1rem;
+    font-weight: 56%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    width: 100px;
+    transition: all .3s ease-in;
+    color: #000000;
+}
+.container .toogle-container button a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.container .toogle-container button:hover{
+    background-color: #e7d429;
+}
+.container form{
+    margin-top: 5%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: left;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.container input{
+    background-color: rgb(226, 236, 255);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+h1{
+    top: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    
+}
+.form-container{
+    position: absolute;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+}
+.toogle-container{
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 70%;
+    height: 100%;
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+}
+.container.active .toogle-container{
+    transform: translateX(-100%);
+}
+.toogle{
+    background-color: #ac6a6a;
+    background: linear-gradient(to left, #5c6bc5, #5c6bc5,);
+    color: antiquewhite;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.container.active .toogle{
+    transform: translateX(50%);
+}
+.toogle-panel{
+    position: flex;
+    margin-top: 35px;
+    width: 50%;
+    height: 100%;
+    margin-top: 10%;
+    display: inline-block;
+    justify-content: left;
+    text-align: left;
+    flex-direction: column;
+    transition: all 0.6s ease-in-out;
+}
+.toogle-left{
+    transform: translateX(50%);
+}
